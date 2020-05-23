@@ -14,7 +14,7 @@
 
 <header class="header">
 	<div class="container">
-	<a href="<?php echo home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png" alt="<?=_e( 'Home Page', 'emp_wpst' ); ?>" /></a>
+	<a href="<?php echo home_url(); ?>">Home</a>
 
 
 	<?php

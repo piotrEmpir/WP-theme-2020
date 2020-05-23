@@ -1,0 +1,14 @@
+@import 'variables';
+
+.block-editor-editor-skeleton__body,
+.editor-styles-wrapper{
+    font-family: $font;
+}
+
+.wp-block
+{
+    background-color: red;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}

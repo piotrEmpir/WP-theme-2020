@@ -30,10 +30,12 @@ function theme_inti() {
     add_theme_support( 'align-wide' );
     add_theme_support( 'responsive-embeds' );
 
+
+
     // Add support for editor styles.
     //add_theme_support( 'editor-styles' );
     // Enqueue editor styles.
-    //add_editor_style( 'style-editor.css' );
+    //add_editor_style( 'css/editor-styles.css' );
 
     register_nav_menus( array(
         'primary'   => __( 'Primary Menu', 'emp_wpst' ),
@@ -45,6 +47,12 @@ endif; // theme_inti
 add_action( 'after_setup_theme', 'theme_inti' );
 
 
+function editor_styles() {
+
+	wp_enqueue_style( 'editor-styles', get_theme_file_uri( '/css/editor-styles.css' ), '', '', 'all' );
+}
+
+add_action( 'enqueue_block_editor_assets', 'editor_styles', 1, 1 );
 
 
 
